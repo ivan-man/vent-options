@@ -43,10 +43,11 @@ function FindProxyForURL(url, host) {
         "proglib.io",
         "booking.com",
         "boosty.to",
-        "mycdn.me"
+        "mycdn.me",
+        "githubassets.com"
     ];
 
-    if (domains.some(domain => dnsDomainIs(host, domain) || host.endsWith(".ru"))) {
+    if (domains.some(domain => dnsDomainIs(host, domain) || host.endsWith(".ru") || host.endsWith(".рф"))) {
         return "DIRECT";
     } else {
         return "SOCKS5 127.0.0.1:1080";
