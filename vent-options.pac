@@ -46,7 +46,8 @@ function FindProxyForURL(url, host) {
         "mycdn.me",
         "githubassets.com",
         "userapi.com",
-        "vkuseraudio.net"
+        "vkuseraudio.net",
+        "googleapis.com"
     ];
 
     if (domains.some(domain => dnsDomainIs(host, domain) || host.endsWith(".ru") || host.endsWith(".рф"))) {
