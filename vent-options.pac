@@ -49,7 +49,7 @@ function FindProxyForURL(url, host) {
         "vkuseraudio.net",
         "googleapis.com",
         "streamlabs.com",
-"https://jackbox.fun"
+"jackbox.fun"
     ];
 
     if (domains.some(domain => dnsDomainIs(host, domain) || host.endsWith(".ru") || host.endsWith(".рф"))) {
