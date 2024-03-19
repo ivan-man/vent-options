@@ -51,6 +51,7 @@ function FindProxyForURL(url, host) {
         "streamlabs.com",
         "jackbox.fun",
         "reddit.com",
+        "aliexpress.com",
     ];
 
     if (domains.some(domain => dnsDomainIs(host, domain) || host.endsWith(".ru") || host.endsWith(".рф"))) {
