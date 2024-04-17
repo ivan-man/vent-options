@@ -54,6 +54,7 @@ function FindProxyForURL(url, host) {
         "aliexpress.com",
         "avito.st",
         "aestatic.net",
+        "pki.goog",
     ];
 
     if (domains.some(domain => dnsDomainIs(host, domain) || host.endsWith(".ru") || host.endsWith(".рф"))) {
