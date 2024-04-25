@@ -56,6 +56,7 @@ function FindProxyForURL(url, host) {
         "aestatic.net",
         "pki.goog",
         "yandex.net",
+        "escapefromtarkov.com",
     ];
 
     if (domains.some(domain => dnsDomainIs(host, domain) || host.endsWith(".ru") || host.endsWith(".рф"))) {
