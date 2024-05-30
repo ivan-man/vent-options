@@ -30,7 +30,6 @@ function FindProxyForURL(url, host) {
         "store.steampowered.com",
         "alibaba.com",
         "alicdn.com",
-        "docker.com",
         "cloudfront.ne",
         "github.com",
         "7tv.io",
