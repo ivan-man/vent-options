@@ -13,7 +13,6 @@ function FindProxyForURL(url, host) {
         "yandex.ru",
         "google.com", 
         "telegram.org", 
-        "youtube.com",
         "gosuslugi.ru",
         "binance.com",
         "habr.com",
