@@ -8,7 +8,6 @@ function FindProxyForURL(url, host) {
         "jtvnw.net", 
         "betterttv.net", 
         "frankerfacez.com", 
-        "googlevideo.com",
         "hh.ru", 
         "yandex.ru",
         "google.com", 
