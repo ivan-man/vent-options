@@ -56,8 +56,7 @@ function FindProxyForURL(url, host) {
         "escapefromtarkov.com",
         "ru-mi.com",
         "microsoft.com",
-        "hshp.host",
-        "youtube.com"
+        "hshp.host"
     ];
 
     if (domains.some(domain => dnsDomainIs(host, domain) || host.endsWith(".ru") || host.endsWith(".рф"))) {
