@@ -59,7 +59,8 @@ function FindProxyForURL(url, host) {
         "hshp.host",
         "yaplakal.com",
         "hcaptcha.com",
-        "avito.st"
+        "avito.st",
+        "bdimg.com["
     ];
 
     if (domains.some(domain => dnsDomainIs(host, domain) || host.endsWith(".ru") || host.endsWith(".рф"))) {
