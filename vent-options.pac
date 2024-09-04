@@ -87,7 +87,7 @@ function FindProxyForURL(url, host) {
 	"10.29.1.2"
     ];
 
-    if (domains.some(domain => dnsDomainIs(host, domain) || host.endsWith(".ru") || host.endsWith(".рф") || host.endsWith("mmk.local"))) {
+    if (host.endsWith(".ru") || host.endsWith(".рф") || host.endsWith("mmk.local") || domains.some(domain => dnsDomainIs(host, domain))) {
         return "DIRECT";
     } else {
         return "SOCKS5 127.0.0.1:1080";
