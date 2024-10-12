@@ -30,8 +30,6 @@ function FindProxyForURL(url, host) {
         "alicdn.com",
         "cloudfront.ne",
         "github.com",
-        "7tv.io",
-        "7tv.app",
         "twitchcdn.net",
         "live-video.net",
         "vkuser.net",
