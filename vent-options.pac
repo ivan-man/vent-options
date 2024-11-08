@@ -69,7 +69,8 @@ function FindProxyForURL(url, host) {
 	"youtube.com",
 	"microsoft.com",
 	"msecnd.net",
-	"github.io"
+	"github.io",
+	"escapefromtarkov.com"
     ];
 
     if (host.endsWith(".ru")
