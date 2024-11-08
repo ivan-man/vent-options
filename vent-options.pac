@@ -69,6 +69,7 @@ function FindProxyForURL(url, host) {
 	"youtube.com",
 	"microsoft.com",
 	"msecnd.net",
+	"github.io"
     ];
 
     if (host.endsWith(".ru")
