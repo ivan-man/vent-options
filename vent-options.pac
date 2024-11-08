@@ -64,7 +64,11 @@ function FindProxyForURL(url, host) {
         "drweb.com",
         "yastatic.net",
         "80.249.129.32",
-	"googlevideo.com"
+
+	"googlevideo.com",
+	"youtube.com",
+	"microsoft.com",
+	"msecnd.net",
     ];
 
     if (host.endsWith(".ru")
