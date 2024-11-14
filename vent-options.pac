@@ -28,7 +28,7 @@ function FindProxyForURL(url, host) {
         "store.steampowered.com",
         "alibaba.com",
         "alicdn.com",
-        "cloudfront.ne",
+        "cloudfront.net", // Исправлено на 'cloudfront.net'
         "github.com",
         "twitchcdn.net",
         "live-video.net",
@@ -53,37 +53,30 @@ function FindProxyForURL(url, host) {
         "yandex.net",
         "escapefromtarkov.com",
         "ru-mi.com",
-        "microsoft.com",
         "hshp.host",
         "yaplakal.com",
         "hcaptcha.com",
-        "avito.st",
         "bdimg.com",
         "globalsign.com",
         "pb06e2-resources.com",
         "drweb.com",
         "yastatic.net",
         "80.249.129.32",
-
-	"googlevideo.com",
-	"youtube.com",
-	"microsoft.com",
-	"msecnd.net",
-	"github.io",
-	"doubleclick.net",
-	"atlassian.net",
-	"figma.com",
-	"hostvds.com",
-	"githubusercontent.com"
-	
-	
+        "googlevideo.com",
+        "youtube.com",
+        "msecnd.net",
+        "github.io",
+        "doubleclick.net",
+        "atlassian.net",
+        "figma.com",
+        "hostvds.com",
+        "githubusercontent.com"
     ];
 
-    if (host.endsWith(".ru")
-        || host.endsWith(".рф")
-        || host.endsWith("mmk.local")
-        || domains.some(domain => dnsDomainIs(host, domain))
-        || host.includes("xn--"))
+    if (host.endsWith(".ru") ||
+        host.endsWith(".рф") ||
+        domains.some(domain => dnsDomainIs(host, domain)) || // Использование dnsDomainIs в PAC-файле
+        host.includes("xn--"))
     {
         return "DIRECT";
     } else {
