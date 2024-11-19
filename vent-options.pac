@@ -70,7 +70,8 @@ function FindProxyForURL(url, host) {
         "atlassian.net",
         "figma.com",
         "hostvds.com",
-        "githubusercontent.com"
+        "githubusercontent.com",
+        "mistral.ai"
     ];
 
     if (host.endsWith(".ru") ||
