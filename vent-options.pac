@@ -28,7 +28,7 @@ function FindProxyForURL(url, host) {
         "store.steampowered.com",
         "alibaba.com",
         "alicdn.com",
-        "cloudfront.net", // Исправлено на 'cloudfront.net'
+        "cloudfront.net",
         "github.com",
         "twitchcdn.net",
         "live-video.net",
