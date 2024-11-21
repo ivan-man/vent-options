@@ -73,7 +73,8 @@ function FindProxyForURL(url, host) {
         "githubusercontent.com",
         "mistral.ai",
         "googleadservices.com",
-        "ggpht.com"
+        "ggpht.com",
+        "googleusercontent.com"
     ];
 
     if (host.endsWith(".ru") ||
