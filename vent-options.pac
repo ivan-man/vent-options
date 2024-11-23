@@ -74,7 +74,8 @@ function FindProxyForURL(url, host) {
         "mistral.ai",
         "googleadservices.com",
         "ggpht.com",
-        "googleusercontent.com"
+        "googleusercontent.com",
+        "boosty.to"
     ];
 
     if (host.endsWith(".ru") ||
