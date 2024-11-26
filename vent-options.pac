@@ -77,7 +77,8 @@ function FindProxyForURL(url, host) {
         "googleusercontent.com",
         "boosty.to",
         "nuget.org",
-        "horodigital.ru"
+        "horodigital.ru",
+        "exp-tas.com"
     ];
 
     if (host.endsWith(".ru") ||
