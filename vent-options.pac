@@ -78,7 +78,8 @@ function FindProxyForURL(url, host) {
         "boosty.to",
         "nuget.org",
         "horodigital.ru",
-        "exp-tas.com"
+        "exp-tas.com",
+        "googleapis.com", "ytimg.com", "youtubei.googleapis.com", "doubleclick.net", "googleadservices.com", "pagead2.googlesyndication.com", "geo.youtube.com", "geo.googleapis.com"
     ];
 
     if (host.endsWith(".ru") ||
