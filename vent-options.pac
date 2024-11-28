@@ -80,7 +80,7 @@ function FindProxyForURL(url, host) {
         "horodigital.ru",
         "exp-tas.com",
         "googleapis.com", "ytimg.com", "youtubei.googleapis.com", "doubleclick.net", "googleadservices.com", "pagead2.googlesyndication.com", "geo.youtube.com", "geo.googleapis.com",
-        "outlook.office.com", "msecnd.net",
+        "outlook.office.com", "msecnd.net", "office.com",
         "steamstatic.com"
     ];
 
