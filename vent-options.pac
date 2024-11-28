@@ -84,10 +84,11 @@ function FindProxyForURL(url, host) {
         "steamstatic.com"
     ];
 
-    if (host.endsWith(".ru") ||
-        host.endsWith(".рф") ||
-        domains.some(domain => dnsDomainIs(host, domain)) || // Использование dnsDomainIs в PAC-файле
-        host.includes("xn--"))
+    if (host.endsWith(".ru")
+        || host.endsWith(".рф")
+        || domains.some(domain => dnsDomainIs(host, domain))
+        || host.includes("xn--")
+        || domains.some(domain => host.includes(domain)))
     {
         return "DIRECT";
     } else {
