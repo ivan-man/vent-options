@@ -79,7 +79,8 @@ function FindProxyForURL(url, host) {
         "nuget.org",
         "horodigital.ru",
         "exp-tas.com",
-        "googleapis.com", "ytimg.com", "youtubei.googleapis.com", "doubleclick.net", "googleadservices.com", "pagead2.googlesyndication.com", "geo.youtube.com", "geo.googleapis.com"
+        "googleapis.com", "ytimg.com", "youtubei.googleapis.com", "doubleclick.net", "googleadservices.com", "pagead2.googlesyndication.com", "geo.youtube.com", "geo.googleapis.com",
+        "outlook.office.com"
     ];
 
     if (host.endsWith(".ru") ||
