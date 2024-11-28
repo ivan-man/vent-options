@@ -84,14 +84,12 @@ function FindProxyForURL(url, host) {
         "steamstatic.com"
     ];
 
-    // Проверяем .ru, .рф, и IDN
     if (host.endsWith(".ru")
         || host.endsWith(".рф")
         || host.includes("xn--")) {
         return "DIRECT";
     }
 
-    // Проверяем наличие домена в списке
     for (let i = 0; i < domains.length; i++) {
         if (dnsDomainIs(host, domains[i])) {
             return "DIRECT";
