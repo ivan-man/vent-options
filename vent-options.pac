@@ -84,14 +84,19 @@ function FindProxyForURL(url, host) {
         "steamstatic.com"
     ];
 
+    // Проверяем .ru, .рф, и IDN
     if (host.endsWith(".ru")
         || host.endsWith(".рф")
-        || domains.some(domain => dnsDomainIs(host, domain))
-        || host.includes("xn--")
-        || domains.some(domain => host.includes(domain)))
-    {
+        || host.includes("xn--")) {
         return "DIRECT";
-    } else {
-        return "SOCKS5 127.0.0.1:1080";
     }
+
+    // Проверяем наличие домена в списке
+    for (let i = 0; i < domains.length; i++) {
+        if (dnsDomainIs(host, domains[i])) {
+            return "DIRECT";
+        }
+    }
+
+    return "SOCKS5 127.0.0.1:1080";
 }
