@@ -80,8 +80,8 @@ function FindProxyForURL(url, host) {
         "nuget.org",
         "horodigital.ru",
         "exp-tas.com",
-        -- "googleapis.com", "ytimg.com", "youtubei.googleapis.com", "doubleclick.net", "googleadservices.com", 
-        -- "pagead2.googlesyndication.com", "geo.youtube.com", "geo.googleapis.com", "youtu.be",
+        "googleapis.com", "ytimg.com", "youtubei.googleapis.com", "doubleclick.net", "googleadservices.com", 
+        "pagead2.googlesyndication.com", "geo.youtube.com", "geo.googleapis.com", "youtu.be",
         "outlook.office.com", "msecnd.net", "office.com",
         "steamstatic.com",
         "kick.com"
