@@ -64,7 +64,7 @@ function FindProxyForURL(url, host) {
         "yastatic.net",
         "80.249.129.32",
         "googlevideo.com",
-        -- "youtube.com",
+        "youtube.com",
         "msecnd.net",
         "github.io",
         "doubleclick.net",
