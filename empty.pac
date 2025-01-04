@@ -30,6 +30,7 @@ function FindProxyForURL(url, host) {
         "alicdn.com",
         "cloudfront.net",
         "github.com",
+        "githubusercontent.com",
         "twitchcdn.net",
         "live-video.net",
         "vkuser.net",
@@ -62,8 +63,8 @@ function FindProxyForURL(url, host) {
         "drweb.com",
         "yastatic.net",
         "80.249.129.32",
-        "googlevideo.com",
-        "youtube.com",
+        -- "googlevideo.com",
+        -- "youtube.com",
         "msecnd.net",
         "github.io",
         "doubleclick.net",
@@ -77,16 +78,26 @@ function FindProxyForURL(url, host) {
         "googleusercontent.com",
         "boosty.to",
         "nuget.org",
-        "horodigital.ru"
+        "horodigital.ru",
+        "exp-tas.com",
+        -- "googleapis.com", "ytimg.com", "youtubei.googleapis.com", "doubleclick.net", "googleadservices.com", 
+        -- "pagead2.googlesyndication.com", "geo.youtube.com", "geo.googleapis.com", "youtu.be",
+        "outlook.office.com", "msecnd.net", "office.com",
+        "steamstatic.com",
+        "kick.com"
     ];
 
-    if (host.endsWith(".ru") ||
-        host.endsWith(".рф") ||
-        domains.some(domain => dnsDomainIs(host, domain)) || // Использование dnsDomainIs в PAC-файле
-        host.includes("xn--"))
-    {
+    if (host.endsWith(".ru")
+        || host.endsWith(".рф")
+        || host.includes("xn--")) {
         return "DIRECT";
-    } else {
-        return "SOCKS5 127.0.0.1:1080";
     }
+
+    for (let i = 0; i < domains.length; i++) {
+        if (dnsDomainIs(host, domains[i])) {
+            return "DIRECT";
+        }
+    }
+
+    return "SOCKS5 127.0.0.1:1080";
 }
