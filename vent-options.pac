@@ -84,6 +84,10 @@ function FindProxyForURL(url, host) {
         "pagead2.googlesyndication.com", "geo.youtube.com", "geo.googleapis.com", "youtu.be",
         "outlook.office.com", "msecnd.net", "office.com",
         "steamstatic.com",
+        "steampowered.com",
+        "sectigo.com",
+        "cloudflare.com",
+        "steamserver.net",
         "kick.com"
     ];
 
