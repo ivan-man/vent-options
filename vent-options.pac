@@ -88,6 +88,7 @@ function FindProxyForURL(url, host) {
         "sectigo.com",
         "cloudflare.com",
         "steamserver.net",
+        "amazontrust.com",
         "kick.com"
     ];
 
