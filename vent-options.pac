@@ -90,7 +90,8 @@ function FindProxyForURL(url, host) {
         "steamserver.net",
         "amazontrust.com",
         "kick.com",
-        "deepseek.com"
+        "deepseek.com",
+        "cloudflare.com"
     ];
 
     if (host.endsWith(".ru")
