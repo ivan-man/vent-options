@@ -91,7 +91,8 @@ function FindProxyForURL(url, host) {
         "amazontrust.com",
         "kick.com",
         "deepseek.com",
-        "cloudflare.com"
+        "cloudflare.com",
+        "qwen.ai"
     ];
 
     if (host.endsWith(".ru")
